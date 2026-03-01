@@ -4,19 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Meuz'MUN</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">Meuz'<span>MUN</span></a>
-            <div class="mobile-menu" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <a href="index.html" class="logo"><img src="logo.jpg" alt="Meuz'MUN" style="height: 50px; width: auto;"></a>
+            <div class="mobile-menu" onclick="toggleMenu()"><span></span><span></span><span></span></div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="about.html">À propos</a></li>
@@ -28,103 +23,78 @@
             </ul>
         </div>
     </nav>
-
-    <!-- Page Hero -->
-    <div class="page-hero">
-        <h1>Nous contacter</h1>
-    </div>
-
-    <!-- Contact Section -->
-    <section class="content-section" style="background: var(--light);">
+    <div class="page-hero"><h1>Nous contacter</h1></div>
+    <section style="background: var(--dark); padding: 6rem 2rem;">
         <div class="container">
-            <div class="contact-content">
-                <p style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 3rem;">
-                    Une question ? Une suggestion ? N'hésitez pas à nous contacter, nous serons ravis de vous répondre !
-                </p>
-
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i>📧</i>
-                        <h3>Email</h3>
-                        <a href="mailto:contact@meuzmun.fr">contact@meuzmun.fr</a>
-                        <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;"></p>
+            <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+                <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.2rem; margin-bottom: 3rem; line-height: 1.8;">Une question ? Une suggestion ? N'hésitez pas à nous contacter !</p>
+                <div style="display: grid; gap: 2rem;">
+                    <div class="contact-item glass" style="padding: 3rem 2rem; border-radius: 25px; transition: all 0.4s ease;">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="2" style="margin-bottom: 1rem;">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <h3 style="color: var(--white); font-size: 1.5rem; margin-bottom: 1rem;">Email</h3>
+                        <a href="mailto:contact@meuzmun.fr" style="color: var(--accent-gold); text-decoration: none; font-weight: 600;">contact@meuzmun.fr</a>
+                        <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; margin-top: 0.5rem;">(Remplacez par votre email)</p>
                     </div>
-
-                    <div class="contact-item">
-                        <i>📱</i>
-                        <h3>Réseaux sociaux</h3>
-                        <p>@MeuzMUN sur Instagram</p>
-                        <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;"</p>
+                    <div class="contact-item glass" style="padding: 3rem 2rem; border-radius: 25px; transition: all 0.4s ease;">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="var(--secondary-blue)" stroke-width="2" style="margin-bottom: 1rem;">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        <h3 style="color: var(--white); font-size: 1.5rem; margin-bottom: 1rem;">Réseaux sociaux</h3>
+                        <p style="color: var(--secondary-blue); font-weight: 600;">@MeuzMUN sur Instagram</p>
+                        <p style="color: rgba(255, 255, 255, 0.6); font-size: 0.9rem; margin-top: 0.5rem;">(Remplacez par vos comptes)</p>
                     </div>
-
-                    <div class="contact-item">
-                        <i>📍</i>
-                        <h3>Localisation</h3>
-                        <p>Département de la Meuse</p>
-                        <p style="margin-top: 0.5rem;">Bar-le-Duc, Verdun, Stenay, Commercy</p>
+                    <div class="contact-item glass" style="padding: 3rem 2rem; border-radius: 25px; transition: all 0.4s ease;">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="2" style="margin-bottom: 1rem;">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <h3 style="color: var(--white); font-size: 1.5rem; margin-bottom: 1rem;">Localisation</h3>
+                        <p style="color: rgba(255, 255, 255, 0.8);">Département de la Meuse</p>
+                        <p style="color: rgba(255, 255, 255, 0.8); margin-top: 0.5rem;">Bar-le-Duc • Verdun • Stenay • Commercy</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-   <!-- Google Maps Section -->
-    <section class="content-section">
-    <div class="container">
-        <h2 class="section-title">Nous trouver</h2>
-        <div style="background: var(--light); padding: 3rem; border-radius: 20px;">
-            <p style="text-align: center; font-size: 1.2rem; color: var(--text-light); margin-bottom: 2rem;">
-                📍 Centre Mondial de la Paix - Verdun
-            </p>
-            <div style="border-radius: 20px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2609.2052118339116!2d5.378362176341434!3d49.15871297137452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47eb1bf7ffc751db%3A0xe66db63ca0870058!2sCtre%20Mondial%20de%20la%20Paix%2C%2055100%20Verdun!5e0!3m2!1sen!2sfr!4v1770882371115!5m2!1sen!2sfr"
-                    width="600" 
-                    height="450" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-            
-            <!-- Info supplémentaire -->
-            <div style="margin-top: 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-                <div style="text-align: center; padding: 1.5rem; background: var(--white); border-radius: 15px;">
-                    <h4 style="color: var(--primary-blue); margin-bottom: 0.5rem; font-weight: 700;">📍 Sessions</h4>
-                    <p style="color: var(--text-light);">Centre Mondial de la Paix<br>Place Monseigneur Ginisty<br>55100 Verdun</p>
+    <section style="background: linear-gradient(180deg, var(--dark) 0%, #1a2332 100%); padding: 6rem 2rem;">
+        <div class="container">
+            <h2 class="section-title">Nous trouver</h2>
+            <div class="glass" style="padding: 3rem; border-radius: 25px;">
+                <p style="text-align: center; color: rgba(255, 255, 255, 0.9); font-size: 1.2rem; margin-bottom: 2rem;">📍 Centre Mondial de la Paix - Verdun</p>
+                <div style="border-radius: 20px; overflow: hidden; height: 400px; background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue)); display: flex; align-items: center; justify-content: center;">
+                    <p style="color: var(--white); font-size: 1.5rem; text-align: center;">Insérez ici votre iframe Google Maps<br><br><span style="font-size: 4rem;">🗺️</span></p>
                 </div>
-                <div style="text-align: center; padding: 1.5rem; background: var(--white); border-radius: 15px;">
-                    <h4 style="color: var(--primary-blue); margin-bottom: 0.5rem; font-weight: 700;">🎉 Soirée MUN</h4>
-                    <p style="color: var(--text-light);">Le Lieu<br>Verdun 55320</p>
+                <div style="margin-top: 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                    <div style="text-align: center; padding: 2rem; background: rgba(255, 255, 255, 0.05); border-radius: 15px;">
+                        <h4 style="color: var(--accent-gold); margin-bottom: 0.5rem; font-weight: 700;">📍 Sessions</h4>
+                        <p style="color: rgba(255, 255, 255, 0.8);">Centre Mondial de la Paix<br>Verdun</p>
+                    </div>
+                    <div style="text-align: center; padding: 2rem; background: rgba(255, 255, 255, 0.05); border-radius: 15px;">
+                        <h4 style="color: var(--accent-gold); margin-bottom: 0.5rem; font-weight: 700;">🎉 Soirée MUN</h4>
+                        <p style="color: rgba(255, 255, 255, 0.8);">Le Lieu<br>Verdun 55320</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-    <!-- Info Banner -->
-    <section class="content-section" style="background: linear-gradient(135deg, var(--dark), var(--primary-blue)); color: var(--white); text-align: center;">
+    </section>
+    <section style="background: var(--gradient-1); padding: 6rem 2rem; text-align: center;">
         <div class="container">
             <h2 class="section-title" style="color: var(--white);">Rejoignez l'aventure !</h2>
-            <p style="font-size: 1.3rem; max-width: 800px; margin: 0 auto 2rem; line-height: 1.8;">
-                Le Meuz'MUN, c'est une opportunité unique de découvrir la diplomatie, de rencontrer d'autres lycéens passionnés et de développer vos compétences en débat et négociation.
-            </p>
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="about.html" class="cta-button">Découvrir le projet</a>
-                <a href="faq.html" class="cta-button cta-secondary">Voir la FAQ</a>
+            <div class="glass" style="display: inline-block; padding: 3rem 4rem; border-radius: 25px; max-width: 900px;">
+                <p style="font-size: 1.3rem; color: rgba(255, 255, 255, 0.95); line-height: 1.8; margin-bottom: 2rem;">Le Meuz'MUN, c'est une opportunité unique de découvrir la diplomatie et de développer vos compétences.</p>
+                <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="about.html" class="cta-button">Découvrir</a>
+                    <a href="faq.html" class="cta-button cta-secondary">FAQ</a>
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Meuz'MUN - Tous droits réservés</p>
-            <p style="margin-top: 0.5rem;">Modèle des Nations Unies - Département Meusien</p>
-        </div>
-    </footer>
-
+    <footer><div class="container"><p>&copy; 2025 Meuz'MUN - Tous droits réservés</p></div></footer>
     <script src="script.js"></script>
 </body>
 </html>

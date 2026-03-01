@@ -4,19 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'Équipe - Meuz'MUN</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">Meuz'<span>MUN</span></a>
-            <div class="mobile-menu" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <a href="index.html" class="logo"><img src="logo.jpg" alt="Meuz'MUN" style="height: 50px; width: auto;"></a>
+            <div class="mobile-menu" onclick="toggleMenu()"><span></span><span></span><span></span></div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="about.html">À propos</a></li>
@@ -28,93 +23,70 @@
             </ul>
         </div>
     </nav>
-
-    <!-- Page Hero -->
-    <div class="page-hero">
-        <h1>L'équipe organisatrice</h1>
-    </div>
-
-    <!-- Team Section -->
-    <section class="content-section" style="background: var(--light);">
+    <div class="page-hero"><h1>L'équipe organisatrice</h1></div>
+    <section style="background: var(--dark); padding: 6rem 2rem;">
         <div class="container">
-            <p style="text-align: center; font-size: 1.2rem; color: var(--text-light); margin-bottom: 4rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-                Une équipe dévouée de lycéens passionnés qui travaillent ensemble pour faire de cet événement une réussite.
-            </p>
-
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="team-avatar">👤</div>
-                    <h3>Nom Prénom</h3>
-                    <p>Secrétaire Général(e)</p>
+            <p style="text-align: center; color: rgba(255, 255, 255, 0.9); font-size: 1.2rem; margin-bottom: 4rem; max-width: 800px; margin-left: auto; margin-right: auto;">Une équipe dévouée de lycéens passionnés qui travaillent ensemble pour faire de cet événement une réussite.</p>
+            <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem;">
+                <div class="team-member glass" style="text-align: center; padding: 3rem 2rem; border-radius: 25px;">
+                    <div class="team-avatar" style="width: 120px; height: 120px; background: var(--gradient-gold); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">👤</div>
+                    <h3 style="color: var(--white); font-size: 1.5rem; margin-bottom: 0.5rem;">Nom Prénom</h3>
+                    <p style="color: var(--accent-gold); font-weight: 600;">Secrétaire Général(e)</p>
                 </div>
-                <div class="team-member">
-                    <div class="team-avatar">👤</div>
-                    <h3>Nom Prénom</h3>
-                    <p>Secrétaire Général(e) Adjoint(e)</p>
+                <div class="team-member glass" style="text-align: center; padding: 3rem 2rem; border-radius: 25px;">
+                    <div class="team-avatar" style="width: 120px; height: 120px; background: var(--gradient-1); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">👤</div>
+                    <h3 style="color: var(--white); font-size: 1.5rem; margin-bottom: 0.5rem;">Nom Prénom</h3>
+                    <p style="color: var(--secondary-blue); font-weight: 600;">SG Adjoint(e)</p>
                 </div>
-                <div class="team-member">
-                    <div class="team-avatar">👤</div>
-                    <h3>Nom Prénom</h3>
-                    <p>Responsable Communication</p>
+                <div class="team-member glass" style="text-align: center; padding: 3rem 2rem; border-radius: 25px;">
+                    <div class="team-avatar" style="width: 120px; height: 120px; background: var(--gradient-gold); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">👤</div>
+                    <h3 style="color: var(--white); font-size: 1.5rem; margin-bottom: 0.5rem;">Nom Prénom</h3>
+                    <p style="color: var(--accent-gold); font-weight: 600;">Communication</p>
                 </div>
-                <div class="team-member">
-                    <div class="team-avatar">👤</div>
-                    <h3>Nom Prénom</h3>
-                    <p>Responsable Logistique</p>
+                <div class="team-member glass" style="text-align: center; padding: 3rem 2rem; border-radius: 25px;">
+                    <div class="team-avatar" style="width: 120px; height: 120px; background: var(--gradient-1); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">👤</div>
+                    <h3 style="color: var(--white); font-size: 1.5rem; margin-bottom: 0.5rem;">Nom Prénom</h3>
+                    <p style="color: var(--secondary-blue); font-weight: 600;">Logistique</p>
                 </div>
-                <div class="team-member">
-                    <div class="team-avatar">👤</div>
-                    <h3>Nom Prénom</h3>
-                    <p>Chair HLPF</p>
+                <div class="team-member glass" style="text-align: center; padding: 3rem 2rem; border-radius: 25px;">
+                    <div class="team-avatar" style="width: 120px; height: 120px; background: var(--gradient-gold); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">👤</div>
+                    <h3 style="color: var(--white); font-size: 1.5rem; margin-bottom: 0.5rem;">Nom Prénom</h3>
+                    <p style="color: var(--accent-gold); font-weight: 600;">Chair HLPF</p>
                 </div>
-                <div class="team-member">
-                    <div class="team-avatar">👤</div>
-                    <h3>Nom Prénom</h3>
-                    <p>Chair UNDRR</p>
+                <div class="team-member glass" style="text-align: center; padding: 3rem 2rem; border-radius: 25px;">
+                    <div class="team-avatar" style="width: 120px; height: 120px; background: var(--gradient-1); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">👤</div>
+                    <h3 style="color: var(--white); font-size: 1.5rem; margin-bottom: 0.5rem;">Nom Prénom</h3>
+                    <p style="color: var(--secondary-blue); font-weight: 600;">Chair UNDRR</p>
                 </div>
-                <div class="team-member">
-                    <div class="team-avatar">👤</div>
-                    <h3>Nom Prénom</h3>
-                    <p>Chair FAO</p>
+                <div class="team-member glass" style="text-align: center; padding: 3rem 2rem; border-radius: 25px;">
+                    <div class="team-avatar" style="width: 120px; height: 120px; background: var(--gradient-gold); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">👤</div>
+                    <h3 style="color: var(--white); font-size: 1.5rem; margin-bottom: 0.5rem;">Nom Prénom</h3>
+                    <p style="color: var(--accent-gold); font-weight: 600;">Chair FAO</p>
                 </div>
-                <div class="team-member">
-                    <div class="team-avatar">👤</div>
-                    <h3>Nom Prénom</h3>
-                    <p>Chair UNESCO</p>
+                <div class="team-member glass" style="text-align: center; padding: 3rem 2rem; border-radius: 25px;">
+                    <div class="team-avatar" style="width: 120px; height: 120px; background: var(--gradient-1); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">👤</div>
+                    <h3 style="color: var(--white); font-size: 1.5rem; margin-bottom: 0.5rem;">Nom Prénom</h3>
+                    <p style="color: var(--secondary-blue); font-weight: 600;">Chair UNESCO</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Roles Info -->
-    <section class="content-section">
+    <section style="background: linear-gradient(180deg, var(--dark) 0%, #1a2332 100%); padding: 6rem 2rem;">
         <div class="container">
-            <h2 class="section-title">Les différents rôles</h2>
-            
-            <div style="max-width: 900px; margin: 0 auto;">
-                <div style="background: var(--light); padding: 2rem; border-radius: 15px; margin-bottom: 2rem;">
-                    <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--primary-blue); margin-bottom: 1rem;">Secrétaire général et député (2 personnes)</h3>
-                    <p style="color: var(--text-light); line-height: 1.8;">Ce sont les maîtres de cérémonie. Ils sont chargés de réaliser et organiser les cérémonies d'ouverture et de clôture. Ils devront pour cela mener des recherches sur la problématique et avoir une idée du positionnement de chaque pays.</p>
+            <h2 class="section-title">Les rôles</h2>
+            <div style="max-width: 900px; margin: 0 auto; display: grid; gap: 3rem;">
+                <div class="glass" style="padding: 3rem; border-radius: 25px;">
+                    <h3 style="color: var(--accent-gold); font-size: 1.8rem; margin-bottom: 1rem;">Secrétaire Général et Député</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">Maîtres de cérémonie. Organisent les cérémonies d'ouverture et de clôture. Effectuent des recherches sur la problématique et le positionnement des pays.</p>
                 </div>
-
-                <div style="background: var(--light); padding: 2rem; border-radius: 15px;">
-                    <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--primary-blue); margin-bottom: 1rem;">Les Chairs (2 binômes par comité)</h3>
-                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">Ce sont les responsables de comité. Ils commenceront par rappeler le fonctionnement des comités (les différentes phases, l'importance de la formalisation, la façon de prendre la parole).</p>
-                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">Puis ils présenteront rapidement la problématique du comité en donnant quelques éléments de contextualisation et d'enjeux.</p>
-                    <p style="color: var(--text-light); line-height: 1.8;">Ensuite, ils appelleront les délégués pays par pays pour qu'ils viennent prononcer un court discours (environ 2min) sur le positionnement du pays sur la problématique (avec des pistes de résolution).</p>
+                <div class="glass" style="padding: 3rem; border-radius: 25px;">
+                    <h3 style="color: var(--secondary-blue); font-size: 1.8rem; margin-bottom: 1rem;">Les Chairs (Présidents de comité)</h3>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">Responsables de comité. Rappellent le fonctionnement des débats, présentent la problématique et gèrent les prises de parole des délégués.</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Meuz'MUN - Tous droits réservés</p>
-            <p style="margin-top: 0.5rem;">Modèle des Nations Unies - Département Meusien</p>
-        </div>
-    </footer>
-
+    <footer><div class="container"><p>&copy; 2025 Meuz'MUN - Tous droits réservés</p></div></footer>
     <script src="script.js"></script>
 </body>
 </html>

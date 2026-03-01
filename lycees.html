@@ -4,19 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lycées Partenaires - Meuz'MUN</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">Meuz'<span>MUN</span></a>
-            <div class="mobile-menu" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <a href="index.html" class="logo"><img src="logo.jpg" alt="Meuz'MUN" style="height: 50px; width: auto;"></a>
+            <div class="mobile-menu" onclick="toggleMenu()"><span></span><span></span><span></span></div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="about.html">À propos</a></li>
@@ -28,78 +23,53 @@
             </ul>
         </div>
     </nav>
-
-    <!-- Page Hero -->
-    <div class="page-hero">
-        <h1>Lycées Partenaires</h1>
-    </div>
-
-    <!-- Intro Section -->
-    <section class="content-section" style="background: var(--light); text-align: center;">
+    <div class="page-hero"><h1>Lycées Partenaires</h1></div>
+    <section style="background: var(--dark); padding: 6rem 2rem; text-align: center;">
         <div class="container">
-            <p style="font-size: 1.3rem; max-width: 800px; margin: 0 auto; color: var(--text-light); line-height: 1.8;">
-                Le Meuz'MUN réunit quatre lycées du département de la Meuse pour cette aventure diplomatique. Chaque lycée propose et anime un comité spécifique.
+            <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.3rem; max-width: 800px; margin: 0 auto 4rem; line-height: 1.8;">
+                Le Meuz'MUN réunit quatre lycées du département de la Meuse pour cette aventure diplomatique unique.
             </p>
-        </div>
-    </section>
-
-    <!-- Lycées Grid -->
-    <section class="content-section">
-        <div class="container">
-            <div class="lycees-grid">
-                <div class="lycee-card">
-                    <div class="lycee-icon">🏛️</div>
-                    <h3>Bar-le-Duc</h3>
-                    <p style="font-weight: 600; color: var(--primary-blue); margin: 1rem 0;">Comité HLPF</p>
-                    <p>Forum politique de haut niveau des Nations unies sur le développement durable</p>
-                    <p style="margin-top: 1rem; font-style: italic; color: var(--text-light);">Débats en français</p>
+            <div class="lycees-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem;">
+                <div class="lycee-card glass" style="padding: 3rem 2rem; border-radius: 25px; text-align: center;">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="2" style="margin-bottom: 1.5rem;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                    <h3 style="color: var(--white); font-size: 1.8rem; margin-bottom: 1rem;">Bar-le-Duc</h3>
+                    <p style="font-weight: 600; color: var(--primary-blue); margin-bottom: 1rem;">Comité HLPF</p>
+                    <p style="color: rgba(255, 255, 255, 0.8);">Forum politique de haut niveau - Développement durable</p>
+                    <p style="margin-top: 1rem; font-style: italic; color: var(--secondary-blue);">🇫🇷 Débats en français</p>
                 </div>
-
-                <div class="lycee-card">
-                    <div class="lycee-icon">🏛️</div>
-                    <h3>Verdun</h3>
-                    <p style="font-weight: 600; color: var(--primary-blue); margin: 1rem 0;">Comité UNDRR</p>
-                    <p>Office des Nations Unies pour la réduction des risques de catastrophe</p>
-                    <p style="margin-top: 1rem; font-style: italic; color: var(--text-light);">Débats en français</p>
+                <div class="lycee-card glass" style="padding: 3rem 2rem; border-radius: 25px; text-align: center;">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="2" style="margin-bottom: 1.5rem;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                    <h3 style="color: var(--white); font-size: 1.8rem; margin-bottom: 1rem;">Verdun</h3>
+                    <p style="font-weight: 600; color: var(--primary-blue); margin-bottom: 1rem;">Comité UNDRR</p>
+                    <p style="color: rgba(255, 255, 255, 0.8);">Réduction des risques de catastrophe</p>
+                    <p style="margin-top: 1rem; font-style: italic; color: var(--secondary-blue);">🇫🇷 Débats en français</p>
                 </div>
-
-                <div class="lycee-card">
-                    <div class="lycee-icon">🏛️</div>
-                    <h3>Stenay</h3>
-                    <p style="font-weight: 600; color: var(--secondary-blue); margin: 1rem 0;">Comité FAO</p>
-                    <p>Food and Agriculture Organization - Organisation pour l'alimentation et l'agriculture</p>
-                    <p style="margin-top: 1rem; font-style: italic; color: var(--text-light);">Débats en anglais</p>
+                <div class="lycee-card glass" style="padding: 3rem 2rem; border-radius: 25px; text-align: center;">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="2" style="margin-bottom: 1.5rem;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                    <h3 style="color: var(--white); font-size: 1.8rem; margin-bottom: 1rem;">Stenay</h3>
+                    <p style="font-weight: 600; color: var(--accent-gold); margin-bottom: 1rem;">Comité FAO</p>
+                    <p style="color: rgba(255, 255, 255, 0.8);">Alimentation et agriculture</p>
+                    <p style="margin-top: 1rem; font-style: italic; color: var(--accent-gold);">🇬🇧 Débats en anglais</p>
                 </div>
-
-                <div class="lycee-card">
-                    <div class="lycee-icon">🏛️</div>
-                    <h3>Commercy</h3>
-                    <p style="font-weight: 600; color: var(--secondary-blue); margin: 1rem 0;">Comité UNESCO</p>
-                    <p>United Nations Educational, Scientific and Cultural Organization</p>
-                    <p style="margin-top: 1rem; font-style: italic; color: var(--text-light);">Débats en anglais</p>
+                <div class="lycee-card glass" style="padding: 3rem 2rem; border-radius: 25px; text-align: center;">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="2" style="margin-bottom: 1.5rem;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                    <h3 style="color: var(--white); font-size: 1.8rem; margin-bottom: 1rem;">Commercy</h3>
+                    <p style="font-weight: 600; color: var(--accent-gold); margin-bottom: 1rem;">Comité UNESCO</p>
+                    <p style="color: rgba(255, 255, 255, 0.8);">Éducation, science et culture</p>
+                    <p style="margin-top: 1rem; font-style: italic; color: var(--accent-gold);">🇬🇧 Débats en anglais</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Collaboration Banner -->
-    <section class="content-section" style="background: linear-gradient(135deg, var(--primary-blue), var(--dark)); color: var(--white); text-align: center;">
+    <section style="background: var(--gradient-1); padding: 6rem 2rem; text-align: center;">
         <div class="container">
             <h2 class="section-title" style="color: var(--white);">Une collaboration inter-lycées</h2>
-            <p style="font-size: 1.3rem; max-width: 800px; margin: 0 auto; line-height: 1.8;">
-                Ce projet unique rassemble les lycéens de la Meuse autour d'une passion commune pour les relations internationales et la diplomatie. Ensemble, nous découvrons les enjeux mondiaux et apprenons l'art de la négociation.
-            </p>
+            <div class="glass" style="display: inline-block; padding: 3rem 4rem; border-radius: 25px; max-width: 900px;">
+                <p style="font-size: 1.3rem; color: rgba(255, 255, 255, 0.95); line-height: 1.8;">Ce projet unique rassemble les lycéens de la Meuse autour d'une passion commune pour les relations internationales et la diplomatie.</p>
+            </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Meuz'MUN - Tous droits réservés</p>
-            <p style="margin-top: 0.5rem;">Modèle des Nations Unies - Département Meusien</p>
-        </div>
-    </footer>
-
+    <footer><div class="container"><p>&copy; 2025 Meuz'MUN - Tous droits réservés</p></div></footer>
     <script src="script.js"></script>
 </body>
 </html>

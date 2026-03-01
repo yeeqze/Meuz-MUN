@@ -4,19 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les Comités - Meuz'MUN</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">Meuz'<span>MUN</span></a>
-            <div class="mobile-menu" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <a href="index.html" class="logo"><img src="logo.jpg" alt="Meuz'MUN" style="height: 50px; width: auto;"></a>
+            <div class="mobile-menu" onclick="toggleMenu()"><span></span><span></span><span></span></div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="about.html">À propos</a></li>
@@ -28,69 +23,58 @@
             </ul>
         </div>
     </nav>
-
-    <!-- Page Hero -->
-    <div class="page-hero">
-        <h1>Les 4 comités</h1>
-    </div>
-
-    <!-- Committees Section -->
-    <section class="content-section" style="background: var(--light);">
+    <div class="page-hero"><h1>Les 4 comités</h1></div>
+    <section class="content-section reveal" style="background: var(--dark); padding: 8rem 2rem;">
         <div class="container">
-            <div class="committees-grid">
-                <div class="committee-card">
-                    <h3>HLPF - Forum politique de haut niveau</h3>
-                    <p><strong>📍 Proposé par Bar-le-Duc</strong></p>
-                    <p style="margin-top: 1rem;">Le HLPF est la principale plateforme des Nations unies sur le développement durable. Il joue un rôle central dans le suivi et l'examen de la mise en œuvre du Programme de développement durable à l'horizon 2030 et de ses ODD.</p>
-                    <p style="margin-top: 1rem;">Le Forum se réunit chaque année sous les auspices du Conseil économique et social (ECOSOC) pendant huit jours, dont un segment ministériel de trois jours. Le Forum procède régulièrement à des examens approfondis des progrès réalisés dans la réalisation des Objectifs de développement durable.</p>
-                    <p style="margin-top: 1rem; font-style: italic; color: var(--primary-blue); font-weight: 600;">🇫🇷 Débats en français</p>
+            <div class="committees-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem;">
+                <div class="committee-card glass" style="padding: 3rem; border-radius: 25px;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                        <span style="background: rgba(0, 102, 204, 0.2); color: var(--secondary-blue); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 700;">🇫🇷 FRANÇAIS</span>
+                    </div>
+                    <h3 style="color: var(--white); font-size: 1.7rem; margin-bottom: 1rem;">HLPF</h3>
+                    <p style="font-weight: 600; color: var(--accent-gold); margin-bottom: 1rem;">📍 Bar-le-Duc</p>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">Forum politique de haut niveau des Nations unies sur le développement durable. Plateforme centrale pour le suivi des ODD.</p>
                 </div>
-
-                <div class="committee-card">
-                    <h3>UNDRR - Office des Nations Unies pour la réduction des risques de catastrophe</h3>
-                    <p><strong>📍 Proposé par Verdun</strong></p>
-                    <p style="margin-top: 1rem;">L'UNDRR (anciennement UNISDR) est le point focal des Nations Unies pour la réduction des risques de catastrophe. L'UNDRR supervise la mise en œuvre du Cadre de Sendai pour la réduction des risques de catastrophe 2015-2030.</p>
-                    <p style="margin-top: 1rem;">Le changement climatique est à l'origine d'un risque accru dans tous les pays, et les risques imprévisibles peuvent avoir des effets dévastateurs en cascade sur tous les secteurs, avec des conséquences socio-économiques et environnementales durables et débilitantes. L'UNDRR œuvre à l'échelle mondiale pour soutenir les objectifs de développement durable et renforcer la résilience grâce à une gestion réussie des risques de catastrophes multisrisques.</p>
-                    <p style="margin-top: 1rem; font-style: italic; color: var(--primary-blue); font-weight: 600;">🇫🇷 Débats en français</p>
+                <div class="committee-card glass" style="padding: 3rem; border-radius: 25px;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path></svg>
+                        <span style="background: rgba(0, 102, 204, 0.2); color: var(--secondary-blue); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 700;">🇫🇷 FRANÇAIS</span>
+                    </div>
+                    <h3 style="color: var(--white); font-size: 1.7rem; margin-bottom: 1rem;">UNDRR</h3>
+                    <p style="font-weight: 600; color: var(--accent-gold); margin-bottom: 1rem;">📍 Verdun</p>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">Office des Nations Unies pour la réduction des risques de catastrophe. Focus sur le changement climatique.</p>
                 </div>
-
-                <div class="committee-card">
-                    <h3>FAO - Food and Agriculture Organization</h3>
-                    <p><strong>📍 Proposé par Stenay</strong></p>
-                    <p style="margin-top: 1rem;">L'Organisation pour l'alimentation et l'agriculture (FAO) est l'agence spécialisée des Nations Unies qui mène les efforts internationaux vers l'élimination de la faim. Notre objectif est d'atteindre la sécurité alimentaire pour tous et d'assurer un accès régulier et suffisant à une nourriture de bonne qualité permettant à tous de mener une vie saine et active.</p>
-                    <p style="margin-top: 1rem;">La FAO compte plus de 194 États membres et travaille dans plus de 130 pays à travers le monde pour aider les populations à améliorer leur agriculture et leur nutrition.</p>
-                    <p style="margin-top: 1rem; font-style: italic; color: var(--secondary-blue); font-weight: 600;">🇬🇧 Débats en anglais</p>
+                <div class="committee-card glass" style="padding: 3rem; border-radius: 25px;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="2"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                        <span style="background: rgba(255, 165, 0, 0.2); color: var(--accent-gold); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 700;">🇬🇧 ENGLISH</span>
+                    </div>
+                    <h3 style="color: var(--white); font-size: 1.7rem; margin-bottom: 1rem;">FAO</h3>
+                    <p style="font-weight: 600; color: var(--accent-gold); margin-bottom: 1rem;">📍 Stenay</p>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">Food and Agriculture Organization. Lutte contre la faim et sécurité alimentaire mondiale.</p>
                 </div>
-
-                <div class="committee-card">
-                    <h3>UNESCO - United Nations Educational, Scientific and Cultural Organization</h3>
-                    <p><strong>📍 Proposé par Commercy</strong></p>
-                    <p style="margin-top: 1rem;">L'UNESCO est l'organisation des Nations Unies qui promeut la coopération dans les domaines de l'éducation, de la science, de la culture et de la communication pour favoriser la paix dans le monde.</p>
-                    <p style="margin-top: 1rem;">L'Organisation fournit des services essentiels à ses États membres, en établissant des normes et standards mondiaux, en développant des outils de coopération internationale, en produisant des connaissances pour les politiques publiques et en construisant des réseaux mondiaux de sites et d'institutions inscrits sur ses listes.</p>
-                    <p style="margin-top: 1rem; font-style: italic; color: var(--secondary-blue); font-weight: 600;">🇬🇧 Débats en anglais</p>
+                <div class="committee-card glass" style="padding: 3rem; border-radius: 25px;">
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                        <span style="background: rgba(255, 165, 0, 0.2); color: var(--accent-gold); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 700;">🇬🇧 ENGLISH</span>
+                    </div>
+                    <h3 style="color: var(--white); font-size: 1.7rem; margin-bottom: 1rem;">UNESCO</h3>
+                    <p style="font-weight: 600; color: var(--accent-gold); margin-bottom: 1rem;">📍 Commercy</p>
+                    <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.8;">Éducation, science, culture et communication pour la paix mondiale.</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Problematic Banner -->
-    <section class="content-section" style="background: linear-gradient(135deg, var(--dark), var(--primary-blue)); color: var(--white); text-align: center;">
+    <section style="background: var(--gradient-1); padding: 6rem 2rem; text-align: center;">
         <div class="container">
             <h2 class="section-title" style="color: var(--white);">Problématique commune</h2>
-            <p style="font-size: 1.5rem; font-style: italic; color: var(--accent-gold); max-width: 900px; margin: 0 auto; line-height: 1.8;">
-                Tous les comités travailleront ensemble sur la problématique : <br>"Protéger la biodiversité et les ressources naturelles face à la croissance démographique et économique"
-            </p>
+            <div class="glass" style="display: inline-block; padding: 3rem 4rem; border-radius: 25px; max-width: 1000px;">
+                <p style="font-size: 1.6rem; font-style: italic; color: var(--accent-gold); line-height: 1.8; font-weight: 600;">Protéger la biodiversité et les ressources naturelles face à la croissance démographique et économique</p>
+            </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Meuz'MUN - Tous droits réservés</p>
-            <p style="margin-top: 0.5rem;">Modèle des Nations Unies - Département Meusien</p>
-        </div>
-    </footer>
-
+    <footer><div class="container"><p>&copy; 2025 Meuz'MUN - Tous droits réservés</p></div></footer>
     <script src="script.js"></script>
 </body>
 </html>
