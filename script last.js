@@ -189,6 +189,7 @@ function toggleFAQ(element) {
     const answer = element.nextElementSibling;
     const allQuestions = document.querySelectorAll('.faq-question');
     const allAnswers = document.querySelectorAll('.faq-answer');
+    const isOpen = answer.classList.contains('active');
     
     allQuestions.forEach(function(q) {
         if (q !== element) {
@@ -198,11 +199,20 @@ function toggleFAQ(element) {
     allAnswers.forEach(function(a) {
         if (a !== answer) {
             a.classList.remove('active');
+            a.style.maxHeight = '0px';
         }
     });
-    
-    element.classList.toggle('active');
-    answer.classList.toggle('active');
+
+    if (isOpen) {
+        element.classList.remove('active');
+        answer.classList.remove('active');
+        answer.style.maxHeight = '0px';
+        return;
+    }
+
+    element.classList.add('active');
+    answer.classList.add('active');
+    answer.style.maxHeight = answer.scrollHeight + 'px';
 }
 
 // Animated counters
