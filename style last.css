@@ -450,6 +450,80 @@ section {
     margin: 0 auto;
 }
 
+/* Skills Section */
+.skills-section {
+    background: linear-gradient(180deg, #f5f7fa 0%, #e8eef6 100%);
+    color: var(--text-dark);
+}
+
+.skills-section .section-title {
+    color: var(--text-dark);
+    background: linear-gradient(135deg, #0a1628 0%, #0066cc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skills-grid > div {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.skill-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(10, 22, 40, 0.08);
+    box-shadow: 0 10px 30px rgba(10, 22, 40, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 34px rgba(0, 102, 204, 0.18);
+    border-color: rgba(0, 102, 204, 0.25);
+}
+
+.skill-icon {
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.12), rgba(0, 168, 255, 0.18));
+}
+
+.skill-icon svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--primary-blue);
+}
+
+.skill-content h4 {
+    margin: 0 0 0.35rem 0;
+    color: var(--dark-blue);
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.skill-content p {
+    margin: 0;
+    color: #334155;
+    line-height: 1.6;
+}
+
 /* Glassmorphism Cards with Flip Effect */
 .event-grid {
     display: grid;
@@ -734,6 +808,15 @@ section {
 
     .section-title {
         font-size: 2.5rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .skill-item {
+        padding: 1rem;
     }
 
     .timeline::before {
