@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yeeqze.github.io/Meuz-MUN/sitemap.xml

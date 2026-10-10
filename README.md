@@ -8,16 +8,13 @@
 
 <p align="center">
   <strong>Developed by yeeqze</strong><br>
-  © 2026 All Rights Reserved
+  © 2026 Meuz'MUN
 </p>
 
 
 #  Meuz'MUN — Site officiel du projet MUN
 
-![GitHub repo size](https://img.shields.io/github/repo-size/yeeqze/index.html)
-![GitHub last commit](https://img.shields.io/github/last-commit/yeeqze/index.html)
 ![GitHub pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-blue)
-![Status](https://img.shields.io/badge/Status-Active-success)
 
 > Site web officiel du projet **Meuz'MUN**, Modèle des Nations Unies organisé dans le département de la Meuse.
 
@@ -59,22 +56,26 @@ Aucun framework externe n’a été utilisé.
 
 ---
 
-##  Structure du projet
+## Structure du projet
 
 ```
- index.html/
- ├── index.html        # Page principale
- ├── about.html        # À propos
- ├── comites.html      # Présentation des comités
- ├── lycees.html       # Lycées participants
- ├── equipe.html       # Équipe organisatrice
- ├── faq.html          # Foire aux questions
- ├── contact.html      # Contact
- ├── style.css         # Feuille de style
- └── script.js         # Scripts JavaScript
+├── index.html, about.html, comites.html, lycees.html, equipe.html, faq.html, contact.html
+├── mentions-legales.html, confidentialite.html (cookies inclus), reglement.html
+├── 404.html, robots.txt, sitemap.xml
+├── style.css
+├── script.js
+└── logo.jpg
 ```
 
----
+## Avant chaque publication
+
+1. Chercher les champs restants : `grep -rn "À COMPLÉTER\|À VÉRIFIER" .` (ils sont surlignés en jaune sur le site).
+2. Vérifier dans les outils de développement du navigateur (onglet Réseau et Application) qu'aucune requête ni aucun cookie tiers n'est chargé avant un clic sur « Afficher la carte ».
+3. N'afficher que les noms et photos de personnes ayant donné une autorisation écrite.
+
+## Polices
+
+Le site utilise la pile de polices du système (aucune requête vers Google). Pour retrouver Inter et Montserrat, héberge les fichiers `.woff2` dans `fonts/` (licence OFL) puis suis les instructions en tête de `style.css`.
 
 ##  Fonctionnalités
 
@@ -102,7 +103,7 @@ Si tu veux modifier le projet :
 
 ```bash
 git clone https://github.com/yeeqze/Meuz-MUN.git
-cd index.html
+cd Meuz-MUN
 ```
 
 Puis ouvre simplement `index.html` dans ton navigateur.

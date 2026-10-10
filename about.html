@@ -3,25 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez Meuz'MUN, un Modèle des Nations Unies départemental qui fait découvrir la diplomatie aux lycéens de la Meuse.">
+    <meta name="theme-color" content="#0a1628">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Meuz'MUN">
+    <meta property="og:title" content="À propos - Meuz'MUN">
+    <meta property="og:description" content="Découvrez Meuz'MUN, un Modèle des Nations Unies départemental qui fait découvrir la diplomatie aux lycéens de la Meuse.">
+    <meta property="og:image" content="https://yeeqze.github.io/Meuz-MUN/logo.jpg">
+    <meta property="og:url" content="https://yeeqze.github.io/Meuz-MUN/about.html">
+    <meta property="og:locale" content="fr_FR">
+    <link rel="icon" href="logo.jpg">
     <title>À propos - Meuz'MUN</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style last.css">
+    <link rel="stylesheet" href="style.css">
+    <noscript><style>.reveal,.reveal-left,.reveal-right{opacity:1;transform:none}</style></noscript>
 </head>
 <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
     <!-- Navigation -->
-    <nav id="navbar">
+    <nav id="navbar" aria-label="Navigation principale">
         <div class="nav-container">
             <a href="index.html" class="logo">
                 <img src="logo.jpg" alt="Meuz'MUN" style="height: 50px; width: auto;">
             </a>
-            <div class="mobile-menu" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button class="mobile-menu" type="button" aria-label="Ouvrir le menu" aria-controls="navLinks" aria-expanded="false"><span></span><span></span><span></span></button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="about.html" class="active">À propos</a></li>
+                <li><a href="about.html" class="active" aria-current="page">À propos</a></li>
                 <li><a href="comites.html">Comités</a></li>
                 <li><a href="lycees.html">Lycées</a></li>
                 <li><a href="equipe.html">Équipe</a></li>
@@ -30,6 +37,7 @@
             </ul>
         </div>
     </nav>
+    <main id="main">
 
     <!-- Page Hero -->
     <div class="page-hero">
@@ -60,7 +68,7 @@
     <section class="content-section reveal" style="background: linear-gradient(180deg, var(--dark) 0%, #1a2332 100%); padding: 6rem 2rem;">
         <div class="container">
             <h2 class="section-title">Le rôle d'ambassadeur</h2>
-            <div class="content-text glass-light" style="max-width: 900px; margin: 0 auto; padding: 3rem; border-radius: 25px;">
+            <div class="content-text glass" style="max-width: 900px; margin: 0 auto; padding: 3rem; border-radius: 25px;">
                 <p style="color: var(--white); font-size: 1.1rem;">Les élèves prennent le rôle d'ambassadeur : c'est-à-dire qu'ils représentent un pays ainsi que ses idées, tout en adoptant le langage et la tenue d'un diplomate. Pour pouvoir bien accomplir ce rôle, les participants effectuent des recherches sur leurs pays afin de comprendre les enjeux actuels et leur position dans les questions internationales.</p>
                 <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem;">Ainsi, ils essayent de répondre et de résoudre les crises hypothétiques qui y sont simulées.</p>
             </div>
@@ -286,14 +294,20 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    </main>
     <footer>
         <div class="container">
-            <p>&copy; 2025 Meuz'MUN - Tous droits réservés</p>
-            <p style="margin-top: 0.5rem;">Modèle des Nations Unies - Département Meusien</p>
+            <p>&copy; 2026 Meuz'MUN. Tous droits réservés.</p>
+            <p>Événement pédagogique indépendant, non affilié à l'Organisation des Nations Unies.</p>
+            <div class="footer-links">
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="confidentialite.html">Confidentialité</a>
+                <a href="confidentialite.html#cookies">Cookies</a>
+                <a href="reglement.html">Règlement</a>
+            </div>
         </div>
     </footer>
 
-    <script src="script last.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -3,19 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Les 4 comités du Meuz'MUN : HLPF, UNDRR, FAO et UNESCO, avec des débats en français et en anglais.">
+    <meta name="theme-color" content="#0a1628">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Meuz'MUN">
+    <meta property="og:title" content="Les Comités - Meuz'MUN">
+    <meta property="og:description" content="Les 4 comités du Meuz'MUN : HLPF, UNDRR, FAO et UNESCO, avec des débats en français et en anglais.">
+    <meta property="og:image" content="https://yeeqze.github.io/Meuz-MUN/logo.jpg">
+    <meta property="og:url" content="https://yeeqze.github.io/Meuz-MUN/comites.html">
+    <meta property="og:locale" content="fr_FR">
+    <link rel="icon" href="logo.jpg">
     <title>Les Comités - Meuz'MUN</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style last.css">
+    <link rel="stylesheet" href="style.css">
+    <noscript><style>.reveal,.reveal-left,.reveal-right{opacity:1;transform:none}</style></noscript>
 </head>
 <body>
-    <nav id="navbar">
+    <a class="skip-link" href="#main">Aller au contenu</a>
+    <nav id="navbar" aria-label="Navigation principale">
         <div class="nav-container">
             <a href="index.html" class="logo"><img src="logo.jpg" alt="Meuz'MUN" style="height: 50px; width: auto;"></a>
-            <div class="mobile-menu" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+            <button class="mobile-menu" type="button" aria-label="Ouvrir le menu" aria-controls="navLinks" aria-expanded="false"><span></span><span></span><span></span></button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="about.html">À propos</a></li>
-                <li><a href="comites.html" class="active">Comités</a></li>
+                <li><a href="comites.html" class="active" aria-current="page">Comités</a></li>
                 <li><a href="lycees.html">Lycées</a></li>
                 <li><a href="equipe.html">Équipe</a></li>
                 <li><a href="faq.html">FAQ</a></li>
@@ -23,6 +34,7 @@
             </ul>
         </div>
     </nav>
+    <main id="main">
     <div class="page-hero"><h1>Les 4 comités</h1></div>
     <section class="content-section reveal" style="background: var(--dark); padding: 8rem 2rem;">
         <div class="container">
@@ -74,7 +86,19 @@
             </div>
         </div>
     </section>
-    <footer><div class="container"><p>&copy; 2025 Meuz'MUN - Tous droits réservés</p></div></footer>
-    <script src="script last.js"></script>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Meuz'MUN. Tous droits réservés.</p>
+            <p>Événement pédagogique indépendant, non affilié à l'Organisation des Nations Unies.</p>
+            <div class="footer-links">
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="confidentialite.html">Confidentialité</a>
+                <a href="confidentialite.html#cookies">Cookies</a>
+                <a href="reglement.html">Règlement</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
