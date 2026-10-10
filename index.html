@@ -41,14 +41,35 @@
 
     <!-- Hero Section with Animated Gradient & Particles -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>MEUZ'MUN</h1>
-            <p class="subtitle">Modèle des Nations Unies - Département Meusien</p>
-            <p class="hero-date">1er et 2 avril 2026</p>
-            <div class="cta-buttons">
-                <a href="about.html" class="cta-button">Découvrir</a>
-                <a href="comites.html" class="cta-button cta-secondary">Les Comités</a>
+        <div class="hero-grid">
+            <div class="hero-content">
+                <h1>MEUZ'MUN</h1>
+                <p class="subtitle">Modèle des Nations Unies - Département Meusien</p>
+                <p class="hero-date">1er et 2 avril 2026</p>
+                <div class="cta-buttons">
+                    <a href="about.html" class="cta-button">Découvrir</a>
+                    <a href="comites.html" class="cta-button cta-secondary">Les Comités</a>
+                </div>
+                <dl class="spec">
+                    <div><dt>Lieu</dt><dd>Verdun</dd></div>
+                    <div><dt>Lycées</dt><dd>4</dd></div>
+                    <div><dt>Comités</dt><dd>4</dd></div>
+                    <div><dt>Langues</dt><dd>FR / EN</dd></div>
+                </dl>
             </div>
+            <figure class="hero-map">
+                <svg viewBox="0 0 320 380" role="img" aria-labelledby="mapT">
+                    <title id="mapT">Schéma des quatre villes participantes en Meuse : Stenay, Verdun, Bar-le-Duc et Commercy</title>
+                    <defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,.08)"/></pattern></defs>
+                    <rect width="320" height="380" fill="url(#g)"/>
+                    <path class="route" d="M91 59 L161 176 L239 319 L79 315 L161 176" fill="none" stroke="#ffa500" stroke-width="1.5" stroke-linejoin="round"/>
+                    <g class="node"><circle cx="91" cy="59" r="6"/><text x="105" y="56" class="c">Stenay</text><text x="105" y="71" class="m">FAO</text></g>
+                    <g class="node host"><circle cx="161" cy="176" r="9"/><text x="177" y="173" class="c">Verdun</text><text x="177" y="188" class="m">UNDRR · sessions</text></g>
+                    <g class="node"><circle cx="239" cy="319" r="6"/><text x="239" y="343" class="c" text-anchor="middle">Commercy</text><text x="239" y="358" class="m" text-anchor="middle">UNESCO</text></g>
+                    <g class="node"><circle cx="79" cy="315" r="6"/><text x="79" y="343" class="c" text-anchor="middle">Bar-le-Duc</text><text x="79" y="358" class="m" text-anchor="middle">HLPF</text></g>
+                </svg>
+                <figcaption>Meuse : 4 lycées, 4 comités</figcaption>
+            </figure>
         </div>
     </section>
 
